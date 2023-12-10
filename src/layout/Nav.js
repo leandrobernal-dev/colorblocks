@@ -1,4 +1,4 @@
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { ThemeToggle } from "@/theme/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { SITE } from "@/config/config";
 import { Github, Palette, SunMoon } from "lucide-react";
