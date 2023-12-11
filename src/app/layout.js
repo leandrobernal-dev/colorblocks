@@ -2,6 +2,8 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Nav from "@/layout/Nav";
 import { ThemeProvider } from "@/theme/ThemeProvider";
+import ToolBox from "@/components/ToolBox";
+import PaletteContextProvider from "@/context/PaletteContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -17,16 +19,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={poppins.className} suppressHydrationWarning>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Nav />
-          {children}
-        </ThemeProvider>
+      <body
+        className={`${poppins.className} bg-background pt-14`}
+        suppressHydrationWarning
+      >
+        <PaletteContextProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Nav />
+            <ToolBox />
+            {children}
+          </ThemeProvider>
+        </PaletteContextProvider>
       </body>
     </html>
   );
