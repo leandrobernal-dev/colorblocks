@@ -12,6 +12,7 @@ export default function PaletteContextProvider({ children, value }) {
   const [palette, setPalette] = useState([
     { name: "--primary", value: "#007bff", darkValue: "#007bff" },
     { name: "--secondary", value: "#6c757d", darkValue: "#6c757d" },
+    { name: "--accent", value: "#6c757d", darkValue: "#6c757d" },
     { name: "--success", value: "#28a745", darkValue: "#28a745" },
     { name: "--info", value: "#17a2b8", darkValue: "#17a2b8" },
     { name: "--warning", value: "#ffc107", darkValue: "#ffc107" },

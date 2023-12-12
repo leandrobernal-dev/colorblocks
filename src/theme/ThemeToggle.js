@@ -8,7 +8,7 @@ import { usePalette } from "@/hooks/usePalette";
 
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
-  const { palette, setPalette } = usePalette();
+  // const { palette, setPalette } = usePalette();
 
   return (
     <Button

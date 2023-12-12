@@ -19,10 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${poppins.className} bg-background pt-14`}
-        suppressHydrationWarning
-      >
+      <body className={`${poppins.className}`} suppressHydrationWarning>
         <PaletteContextProvider>
           <ThemeProvider
             attribute="class"
