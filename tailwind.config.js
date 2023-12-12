@@ -15,6 +15,7 @@ module.exports = {
         background: "var(--background)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        accent: "var(--accent)",
         success: "var(--success)",
         info: "var(--info)",
         warning: "var(--warning)",
